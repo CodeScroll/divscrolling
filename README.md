@@ -6,6 +6,7 @@ Otherwise you can collect the ids with preferred way of class selection like $('
 How is it working.
 
 <b>isScrollToFinished()</b> function , is the starter function. "when the page goes to top(Y=0)". Will start the handler for the scrolling.
+on page load. it will go to top with <b>window.scrollTo(0,0);</b>
 
 <b>onScroll()</b> = "when the window scrolling up or down". when scrolling up, will call the previous section(from section 3 to section 2). and will execute the 
 
