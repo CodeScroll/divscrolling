@@ -17,6 +17,13 @@ respectively for down scrolling. There it will executed the <b>nextSection()</b>
 to disable it for mobile diveces add this.
 
 <script>
+
+    function isMobile() {
+      return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(
+        navigator.userAgent
+      );
+    }
+    
     const isMobileTwo = window.matchMedia("(any-pointer:coarse)").matches;
     if (!isMobile() && !isMobileTwo) {
         isScrollToFinished();
