@@ -13,3 +13,13 @@ on page load. it will go to top with <b>window.scrollTo(0,0);</b>
 <b>scrollToSection()</b> function. this function just animate to scroll to the target div. additionally its the "guard" updater of "isScrolling" variable. when the animation starting will set this to true. when it finished to false.
 
 respectively for down scrolling. There it will executed the <b>nextSection()</b>
+
+to disable it for mobile diveces add this.
+
+<script>
+    const isMobileTwo = window.matchMedia("(any-pointer:coarse)").matches;
+    if (!isMobile() && !isMobileTwo) {
+        isScrollToFinished();
+        window.scrollTo(0,0);
+    }else{$('body').addClass('is-mobile');}
+</script>
