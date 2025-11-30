@@ -28,5 +28,5 @@ to disable it for mobile diveces add this.
     if (!isMobile() && !isMobileTwo) {
         isScrollToFinished();
         window.scrollTo(0,0);
-    }else{$('body').addClass('is-mobile');}
+    }
 </script>
